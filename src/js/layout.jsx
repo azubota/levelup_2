@@ -4,6 +4,7 @@ import ScrollToTop from "./component/functional/scrollToTop.jsx";
 
 import { Home } from "./views/home.jsx";
 import { Demo } from "./views/demo.jsx";
+import { ForgotPassword } from "./views/forgotPassword.jsx";
 import { Single } from "./views/single.jsx";
 import Store from "./store/appContext.jsx";
 
@@ -21,6 +22,10 @@ export class Layout extends React.Component {
 						<Switch>
 							<Route exact path="/" component={Home} />
 							<Route path="/demo" component={Demo} />
+							<Route
+								path="/forgotPassword"
+								component={ForgotPassword}
+							/>
 							<Route path="/single/:theid" component={Single} />
 							<Route render={() => <h1>Not found!</h1>} />
 						</Switch>

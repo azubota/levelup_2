@@ -8,66 +8,90 @@ import "../../styles/demo.css";
 export class Demo extends React.Component {
 	render() {
 		return (
-			<div className="container border border-success mt-2 mb-2 p-2 rounded signin bg-light">
-				<form>
-					<div className="form-group ">
-						<label htmlFor="exampleFormControlInput1">
-							Email address
-						</label>
-						<input
-							type="email"
-							className="form-control"
-							id="exampleFormControlInput1"
-							placeholder="name@example.com"
-						/>
+			<div className="row">
+				<div className="col-3" />
+				<div className="col-6">
+					<div className="container border border-success mt-4 mb-4 p-2 rounded signin bg-light">
+						<form>
+							<div className="form-group ">
+								<label htmlFor="exampleFormControlInput1">
+									Email address
+								</label>
+								<input
+									type="email"
+									className="form-control"
+									id="exampleFormControlInput1"
+									placeholder="name@example.com"
+								/>
+							</div>
+							<div className="form-group ">
+								<label htmlFor="exampleFormControlInput1">
+									Password
+								</label>
+								<input
+									type="password"
+									className="form-control"
+									id="exampleFormControlInput1"
+									placeholder="password"
+								/>
+							</div>
+							<div className="form-group ">
+								<label htmlFor="exampleFormControlInput1">
+									Child Name
+								</label>
+								<input
+									type="name"
+									className="form-control"
+									id="exampleFormControlInput1"
+									placeholder="Name"
+								/>
+							</div>
+							<div className="form-group">
+								<label htmlFor="exampleFormControlSelect1">
+									My child:
+								</label>
+								<select
+									className="form-control"
+									id="exampleFormControlSelect1">
+									<option>can count to 10</option>
+									<option>knows the colors</option>
+									<option>
+										can count to 100 and knows the abc
+									</option>
+									<option>can count to 100</option>
+									<option>knows the abc</option>
+									<option>
+										can count to 20 and knows the abc
+									</option>
+								</select>
+							</div>
+							<div className="form-group">
+								<label htmlFor="exampleFormControlSelect1">
+									Where did you hear about us?
+								</label>
+								<select
+									className="form-control"
+									id="exampleFormControlSelect1">
+									<option>
+										Social media (instagram, facebook)
+									</option>
+									<option>Google</option>
+									<option>A friend</option>
+									<option>Child friend</option>
+									<option>other</option>
+								</select>
+							</div>
+							<Link to="/demo">
+								<button
+									type="submit"
+									className="btn btn-outline-success btn-block mt-1">
+									Start free trial
+								</button>
+							</Link>
+						</form>
 					</div>
-					<div className="form-group">
-						<label htmlFor="exampleFormControlSelect1">
-							Example select
-						</label>
-						<select
-							className="form-control"
-							id="exampleFormControlSelect1">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-						</select>
-					</div>
-					<div className="form-group">
-						<label htmlFor="exampleFormControlSelect2">
-							Example multiple select
-						</label>
-						<select
-							multiple
-							className="form-control"
-							id="exampleFormControlSelect2">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-						</select>
-					</div>
-					<div className="form-group">
-						<label htmlFor="exampleFormControlTextarea1">
-							Example textarea
-						</label>
-						<textarea
-							className="form-control"
-							id="exampleFormControlTextarea1"
-							rows="3"
-						/>
-					</div>
-					<Link to="/demo">
-						<button
-							type="submit"
-							className="btn btn-outline-success btn-block mt-2">
-							Become a member
-						</button>
-					</Link>
-				</form>
+				</div>
+				<div className="col-3" />
 			</div>
 		);
 	}
