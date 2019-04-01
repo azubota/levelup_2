@@ -10,9 +10,11 @@ export class Navbar extends React.Component {
 					<div className="row">
 						<div className="col-sm" />
 						<div className="col-sm">
-							<nav className="navbar navbar-light bg-success rounded-circle justify-content-center">
+							<nav className="navbar navbar-light justify-content-center">
 								<a className="navbar-brand" href="#">
-									<img src={thelevelup} />
+									<h1 className="text-success font-weight-bolder">
+										LEVEL UP
+									</h1>
 								</a>
 							</nav>
 						</div>

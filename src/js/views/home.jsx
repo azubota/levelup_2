@@ -6,7 +6,12 @@ export class Home extends React.Component {
 	render() {
 		return (
 			<div className="row">
-				<div className="col-sm" />
+				<div className="col-sm">
+					<img
+						src="https://previews.dropbox.com/p/thumb/AAaqz2WA48Qm_mHMrxvjICsIVeJiOYlF8ri8XUlLfQ3eX-Kw-k0154Rf7GPMqY8lZJe6FaY3dvBqb4v-3s_ApNDgUnce_QxKsc5cmZ7gsGOFC6JYNLiGxnb1XXx_noD7rsVxN0Ru5DVE4npHDRK4vYddokaCDR0gRx3wWLBw4aMn62kOGCL79yDi33XMFurIt63ZdxtbWxDDOsKf2jdU6ZoiEA2Gq2-jd2siROm7m1f2VD8It8y9ZoEPr_3k8y2bVoiDEzLwPM320YMsxDBYMgzs93WcuZI60LPbUgrRZ4tWPJKj75z43Un4VKxUT8KqkCZK6q2PiNp3OwGm1-iqfRRF/p.png?size_mode=5"
+						className="img-fluid"
+					/>
+				</div>
 				<div className="col-sm">
 					<div className="container border border-success mt-2 mb-2 p-2 rounded signin bg-light">
 						<form>
