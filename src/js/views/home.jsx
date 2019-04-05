@@ -10,14 +10,14 @@ export class Home extends React.Component {
 			<div className="row">
 				<div className="col-sm">
 					<img
-						src="https://previews.dropbox.com/p/thumb/AAaqz2WA48Qm_mHMrxvjICsIVeJiOYlF8ri8XUlLfQ3eX-Kw-k0154Rf7GPMqY8lZJe6FaY3dvBqb4v-3s_ApNDgUnce_QxKsc5cmZ7gsGOFC6JYNLiGxnb1XXx_noD7rsVxN0Ru5DVE4npHDRK4vYddokaCDR0gRx3wWLBw4aMn62kOGCL79yDi33XMFurIt63ZdxtbWxDDOsKf2jdU6ZoiEA2Gq2-jd2siROm7m1f2VD8It8y9ZoEPr_3k8y2bVoiDEzLwPM320YMsxDBYMgzs93WcuZI60LPbUgrRZ4tWPJKj75z43Un4VKxUT8KqkCZK6q2PiNp3OwGm1-iqfRRF/p.png?size_mode=5"
+						src="https://previews.dropbox.com/p/thumb/AAagsQlY6sefsQ65D9sCHh3yhaxOeCejXKvLlvdS9lpCJmwGmDxZVkGdgUMpoG2YU__HFLH_WuirSQUoXKCSLXmvlt3QXZlQLStXx5WhDBMFnLnnR0R_3MbdfzYn5XTUDwVOSztL9lpjkBd-X36wvC_nq42S8lA68hCI0JZb2R405nS-8ifSzFPXDjSZrds-1Dzdr-an_pa2U9IapgFL4yaMdHWqBwNFxsAXUIJMTjLBnn9qdjLo9vzm7zXD-Q3CLBDCrY9jdtJjwnaviaxhyDhoQWV2Zi6jdUHJ-NxCXQ_OONsB0yhf0dnU7doHQaNYnnvLT09RSUO5I2GxyM5EkOwX/p.png?size_mode=5"
 						className="img-fluid"
 					/>
 				</div>
-				<div className="col-sm">
-					<div className="container border border-success mt-2 mb-2 p-2 rounded signin bg-light">
+				<div className="col-sm mt-5">
+					<div className="container border border-success mt-5 mb-2 p-2 rounded bg-light">
 						<form>
-							<div className="form-group">
+							<div className="form-group ">
 								<input
 									type="email"
 									className="form-control btn-outline-success"
