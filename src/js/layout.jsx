@@ -5,13 +5,15 @@ import ScrollToTop from "./component/functional/scrollToTop.jsx";
 import { Home } from "./views/home.jsx";
 import { Signup } from "./views/Signup.jsx";
 import { ForgotPassword } from "./views/forgotPassword.jsx";
+
 import { Lesson } from "./views/lesson.jsx";
 import { LessonList } from "./views/lessonlist.jsx";
 import Store from "./store/appContext.jsx";
 
 import { Navbar } from "./component/navbar.jsx";
 import { Footer } from "./component/footer.jsx";
-
+// import { MathLesson } from "./component/MathLesson";
+// import { ReadingLesson } from "./component/ReadingLesson";
 //create your first component
 export class Layout extends React.Component {
 	render() {
