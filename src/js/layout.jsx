@@ -7,6 +7,7 @@ import { Demo } from "./views/demo.jsx";
 import { ForgotPassword } from "./views/forgotPassword.jsx";
 import { Single } from "./views/single.jsx";
 import { Lesson } from "./views/lesson.jsx";
+import { Grades } from "./views/grades.jsx";
 import { Thelist } from "./views/thelist.jsx";
 import Store from "./store/appContext.jsx";
 
@@ -27,7 +28,7 @@ export class Layout extends React.Component {
 							<Route path="/thelist" component={Thelist} />›
 							<Route path="/demo" component={Demo} />
 							<Route path="/lesson" component={Lesson} />
-
+							<Route path="/grades" component={Grades} />
 							<Route
 								path="/forgotPassword"
 								component={ForgotPassword}

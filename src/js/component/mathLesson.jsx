@@ -16,7 +16,7 @@ export class MathLesson extends React.Component {
 							<p className="card-text">
 								Adding and subtracting within 10
 							</p>
-							<a href="#" className="btn btn-primary">
+							<a href="/thelist" className="btn btn-primary">
 								Math Lesson 1
 							</a>
 						</div>
@@ -29,8 +29,8 @@ export class MathLesson extends React.Component {
 							<p className="card-text">
 								Adding and subtracting within 20
 							</p>
-							<a href="#" className="btn btn-primary">
-								Math Lesson 1
+							<a href="/thelist" className="btn btn-primary">
+								Math Lesson 2
 							</a>
 						</div>
 					</div>
@@ -40,8 +40,8 @@ export class MathLesson extends React.Component {
 						<div className="card-body">
 							<h5 className="card-title">Math Lesson 3</h5>
 							<p className="card-text">Adding tens and ones</p>
-							<a href="#" className="btn btn-primary">
-								Math Lesson 1
+							<a href="/thelist" className="btn btn-primary">
+								Math Lesson 3
 							</a>
 						</div>
 					</div>

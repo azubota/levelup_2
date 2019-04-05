@@ -25,7 +25,7 @@ export class ReadingLesson extends React.Component {
 							<h5 className="card-title">Reading Lesson 2</h5>
 							<p className="card-text"> Short e vowel</p>
 							<a href="#" className="btn btn-primary">
-								Reading Lesson 1
+								Reading Lesson 2
 							</a>
 						</div>
 					</div>
@@ -36,7 +36,7 @@ export class ReadingLesson extends React.Component {
 							<h5 className="card-title">Reading Lesson 3</h5>
 							<p className="card-text"> Short i vowel</p>
 							<a href="#" className="btn btn-primary">
-								Reading Lesson 1
+								Reading Lesson 3
 							</a>
 						</div>
 					</div>
