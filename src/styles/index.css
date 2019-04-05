@@ -1,6 +1,7 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 body {
- background-image: url("background.png");
+ background-image: url("https://previews.dropbox.com/p/thumb/AAaLyMmhNsLGj4Gvw1E3_4dluuawcz2M5sD3T8qCS0RZYHuKWPiqFrkivy7SqOV8fOIuf2gPp0NHWWUHGMtdEK7k0Rm6AGxfzsERKCecdA4nD4rvrzVcy9LXPZ6B-_Wtdm3bRW309wIAdn4eSJpo-tcN924QxHePnlww-SCNaR7s8T3NDIiIOJEiGOxRc0LbiMWOTOLEcUQ2bH07YpqHcDv-G4jK2qcOgj7RxI9T6AqiCU14p7-auuC49ZcC1J9iO-gvS09JOc3u6z3de4PlnrKbEPPDlSRDS7jGZ9ufypfpiQf77_eJSsS6b7t3xyapj1i3E608OfpXmFKJxGx8Gslf/p.png?size_mode=5");
  background-size: cover;
+ opacity: 50;
 }

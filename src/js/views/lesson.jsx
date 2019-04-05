@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Context } from "../store/appContext.jsx";
-
 import "../../styles/demo.css";
+import PropTypes from "prop-types";
+import ReadingLesson from "../component/readinglesson.jsx";
 
-export class Thelist extends React.Component {
+export class Lesson extends React.Component {
 	render() {
 		return (
 			<div className="row">
@@ -15,21 +16,23 @@ export class Thelist extends React.Component {
 						className="img-fluid"
 					/>
 				</div>
-				<div className="col-6 border border-success mt-2 mb-2 p-2 rounded bg-light">
-					<img
-						src="https://is2-ssl.mzstatic.com/image/thumb/Purple71/v4/e2/8b/87/e28b878f-083c-5dc1-b45f-5121661991ae/mzl.fzqwedgw.png/643x0w.jpg"
-						className="img-thumbnail rounded float-left"
-					/>
-					<img
-						src="https://is2-ssl.mzstatic.com/image/thumb/Purple71/v4/e2/8b/87/e28b878f-083c-5dc1-b45f-5121661991ae/mzl.fzqwedgw.png/643x0w.jpg"
-						className="img-thumbnail"
-					/>
-					<img
-						src="https://is2-ssl.mzstatic.com/image/thumb/Purple71/v4/e2/8b/87/e28b878f-083c-5dc1-b45f-5121661991ae/mzl.fzqwedgw.png/643x0w.jpg"
-						className="img-thumbnail"
-					/>
+				<div className="col-6 m-2 p-2">
+					<Context.Consumer>
+						{({ store }) => {
+							return store.lessons.map((item, index) => {
+								return (
+									<ReadingLesson
+										key={index}
+										src={item.image}
+										content={item.content}
+										title={item.title}
+										kind={item.kind}
+									/>
+								);
+							});
+						}}
+					</Context.Consumer>
 				</div>
-
 				<div className="col-3" />
 			</div>
 		);

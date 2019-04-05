@@ -3,10 +3,10 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/functional/scrollToTop.jsx";
 
 import { Home } from "./views/home.jsx";
-import { Demo } from "./views/demo.jsx";
+import { Signup } from "./views/Signup.jsx";
 import { ForgotPassword } from "./views/forgotPassword.jsx";
-import { Single } from "./views/single.jsx";
-import { Thelist } from "./views/thelist.jsx";
+import { Lesson } from "./views/lesson.jsx";
+import { LessonList } from "./views/lessonlist.jsx";
 import Store from "./store/appContext.jsx";
 
 import { Navbar } from "./component/navbar.jsx";
@@ -22,13 +22,13 @@ export class Layout extends React.Component {
 						<Navbar />
 						<Switch>
 							<Route exact path="/" component={Home} />
-							<Route path="/thelist" component={Thelist} />›
-							<Route path="/demo" component={Demo} />
+							<Route path="/lessonlist" component={LessonList} />›
+							<Route path="/Signup" component={Signup} />
 							<Route
 								path="/forgotPassword"
 								component={ForgotPassword}
 							/>
-							<Route path="/single/:theid" component={Single} />
+							<Route path="/lesson" component={Lesson} />
 							<Route render={() => <h1>Not found!</h1>} />
 						</Switch>
 						<Footer />

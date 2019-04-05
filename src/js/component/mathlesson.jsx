@@ -8,36 +8,31 @@ import logo from "../../img/logo.png";
 export default class Mathlesson extends React.Component {
 	render() {
 		return (
-			<mathlesson>
-<div className="col-sm-6">
-    <div className="card">
-      <div className="card-body">
-        <h5 className="card-title">Math Lesson 1</h5>
-        <p className="card-text">Adding and subtracting within 10</p>
-        <a href="#" className="btn btn-primary">Math Lesson 1</a>
-      </div>
-    </div>
-  </div>
-  <div className="col-sm-6">
-    <div className="card">
-      <div className="card-body">
-        <h5 className="card-title">Math Lesson 2</h5>
-        <p className="card-text">Adding and subtracting within 20</p>
-        <a href="#" className="btn btn-primary">Math Lesson 1</a>
-      </div>
-    </div>
-  </div>
-  <div className="col-sm-6">
-    <div className="card">
-      <div className="card-body">
-        <h5 className="card-title">Math Lesson 3</h5>
-        <p className="card-text">Adding tens and ones</p>
-        <a href="#" className="btn btn-primary">Math Lesson 1</a>
-      </div>
-    </div>
-  </div>
-  </mathlesson>
-  );
-		
+	<div className="main text-center">
+				<div className="text-secondary mb-5">
+					<img
+						className="rounded-circle py-0"
+						src={this.props.src}
+						alt="Card image cap"
+					/>
+					<div className="card-body py-0">
+						<h2 className="card-header">{this.props.title}</h2>
+						<p className="card-text pb-3">{this.props.content}</p>
+					</div>
+					<a
+						href="#"
+						className="btn btn-secondary .btn-outline-light">
+						<div>View details {">"}</div>
+					</a>
+				</div>
+			</div>
+		);
 	}
 }
+
+Mathlesson.propTypes = {
+	title: PropTypes.string,
+	src: PropTypes.string,
+	content: PropTypes.string
+};
+
