@@ -37,6 +37,24 @@ const getState = ({ getStore, setStore }) => {
 					hint: "",
 					video: "",
 					image: "https://i.ytimg.com/vi/AXcpYuhtPz8/hqdefault.jpg"
+				},
+				{
+					id: "1",
+					kind: "Math Lesson",
+					title: "Adding tens and ones",
+					content:
+						"In this lesson you will learn about adding ten and ones.",
+					question: "What is the sum? 35 + 4 =",
+					secondquestion:
+						"Maggie has 23 dolls. Her sister, Shay has 7 dolls. How many dolls do they have altogether? ",
+					answer: "39",
+					secondanswer: "30",
+					quizoption1: "37",
+					quizoption2: "39",
+					quizoption3: "40",
+					hint: "",
+					video: "",
+					image: "https://i.ytimg.com/vi/AXcpYuhtPz8/hqdefault.jpg"
 				}
 			]
 		},
@@ -58,7 +76,5 @@ const getState = ({ getStore, setStore }) => {
 		}
 	};
 };
-
-
 
 export default getState;

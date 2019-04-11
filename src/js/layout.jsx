@@ -7,12 +7,11 @@ import { Signup } from "./views/Signup.jsx";
 import { ForgotPassword } from "./views/forgotPassword.jsx";
 
 import { Lesson } from "./views/lesson.jsx";
-<<<<<<< HEAD
-import { Grades } from "./views/grades.jsx";
-import { Thelist } from "./views/thelist.jsx";
-=======
+import { Profile } from "./views/profile.jsx";
+import { Edit } from "./views/edit.jsx";
+
 import { LessonList } from "./views/lessonlist.jsx";
->>>>>>> e9db4a965aceaf6b0f9c2dbd57c60dd07653459b
+
 import Store from "./store/appContext.jsx";
 
 import { Navbar } from "./component/navbar.jsx";
@@ -28,21 +27,16 @@ export class Layout extends React.Component {
 					<ScrollToTop>
 						<Navbar />
 						<Switch>
-							<Route exact path="/" component={Home} />
-<<<<<<< HEAD
-							<Route path="/thelist" component={Thelist} />›
-							<Route path="/demo" component={Demo} />
-							<Route path="/lesson" component={Lesson} />
-							<Route path="/grades" component={Grades} />
-=======
-							<Route path="/lessonlist" component={LessonList} />›
+							<Route exact path="/home" component={Home} />
+							<Route path="/profile" component={Profile} />
+							<Route path="/lessonlist" component={LessonList} />
 							<Route path="/Signup" component={Signup} />
->>>>>>> e9db4a965aceaf6b0f9c2dbd57c60dd07653459b
 							<Route
 								path="/forgotPassword"
 								component={ForgotPassword}
 							/>
 							<Route path="/lesson" component={Lesson} />
+							<Route path="/edit" component={Edit} />
 							<Route render={() => <h1>Not found!</h1>} />
 						</Switch>
 						<Footer />
