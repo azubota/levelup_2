@@ -1,0 +1,7 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+body {
+ background-image: url("https://ucarecdn.com/a4f78e35-880a-4580-bc1f-265ab8f6e341/background.png");
+ background-size: cover;
+ opacity: 50;
+}
