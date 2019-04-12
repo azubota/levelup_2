@@ -5,6 +5,7 @@ import { Context } from "../store/appContext.jsx";
 import "../../styles/demo.css";
 import PropTypes from "prop-types";
 import LessonComponent from "../component/lessoncomponent.jsx";
+import Buttons from "../component/buttons.jsx";
 
 export class Lesson extends React.Component {
 	render() {
@@ -16,7 +17,7 @@ export class Lesson extends React.Component {
 						className="img-fluid"
 					/>
 				</div>
-				<div className="col-6 m-2 p-2">
+				<div className="col-6 ">
 					<Context.Consumer>
 						{({ actions, store }) => {
 							return store.lessons
@@ -47,7 +48,9 @@ export class Lesson extends React.Component {
 						}}
 					</Context.Consumer>
 				</div>
-				<div className="col-3" />
+				<div className="col-3">
+					<Buttons />
+				</div>
 			</div>
 		);
 	}

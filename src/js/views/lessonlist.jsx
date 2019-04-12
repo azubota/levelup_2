@@ -26,7 +26,6 @@ export class LessonList extends React.Component {
 										<div key={index} className="col-3">
 											<LessonCard
 												src={item.image}
-												content={item.content}
 												title={item.title}
 												kind={item.kind}
 												idx={item.id}

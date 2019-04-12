@@ -10,17 +10,13 @@ const getState = ({ getStore, setStore }) => {
 					content:
 						"In this lesson you will learn about the short a vowel.",
 					question: "Which word has the short a vowel?",
-					secondquestion:
-						"Click on the word that does NOT have the short a vowel.",
-					answer: "mat",
-					secondanswer: "rod",
 					quizoption1: "rod",
-					quizoption2: "mat",
-					quizoption3: "heart",
+					quizoption2: "heart",
+					quizoption3: "mat",
 					hint: "",
 					video: "https://www.youtube.com/embed/_KUiov8_uEo",
 					image:
-						"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS66y8AxQ59TGZxJAsZHBKTaSLI1aWOw_T7gdSwA-chTSUWztpYLg",
+						"https://ucarecdn.com/ec7a0fa5-c5bc-4df4-94cf-d9508c2b191e/levelupA.png",
 					next: "/lesson/2"
 				},
 				{
@@ -30,18 +26,14 @@ const getState = ({ getStore, setStore }) => {
 					content:
 						"In this lesson you will learn about the short e vowel.",
 					question: "Which word has the short e vowel?",
-					secondquestion:
-						"Click on the word that does NOT have the short e vowel.",
-					answer: "mat",
-					secondanswer: "rod",
-					quizoption1: "rod",
-					quizoption2: "mat",
-					quizoption3: "heart",
+					quizoption1: "mat",
+					quizoption2: "hop",
+					quizoption3: "jet",
 					quizImage: "url",
 					hint: "",
 					video: "https://www.youtube.com/embed/ONEyC-S1x-U",
 					image:
-						"https://ecdn.teacherspayteachers.com/thumbitem/Short-Vowel-Posters-Freebie-2006887-1459800768/original-2006887-3.jpg",
+						"https://ucarecdn.com/1c135712-aadf-45cf-bcbe-82454e6c8312/levelupE.png",
 					next: "/lesson/3"
 				},
 				{
@@ -51,36 +43,29 @@ const getState = ({ getStore, setStore }) => {
 					content:
 						"In this lesson you will learn about adding ten and ones.",
 					question: "What is the sum? 35 + 4 =",
-					secondquestion:
-						"Maggie has 23 dolls. Her sister, Shay has 7 dolls. How many dolls do they have altogether? ",
-					answer: "39",
-					secondanswer: "30",
 					quizoption1: "37",
-					quizoption2: "39",
-					quizoption3: "40",
+					quizoption2: "40",
+					quizoption3: "39",
 					hint: "",
-					video: "",
-					image: "https://i.ytimg.com/vi/AXcpYuhtPz8/hqdefault.jpg",
+					video: "https://www.youtube.com/watch?v=033pEpEnr_U",
+					image:
+						"https://ucarecdn.com/a410154f-7731-41ed-ae5d-7370bb40ce17/levelup101.png",
 					next: "/lesson/4"
 				},
 				{
 					id: 4,
 					kind: "Math Lesson",
-					title: "Adding tens and ones",
+					title: "Adding and substracting within 10",
 					content:
-						"In this lesson you will learn about adding ten and ones.",
-					question: "What is the sum? 35 + 4 =",
-					secondquestion:
-						"Maggie has 23 dolls. Her sister, Shay has 7 dolls. How many dolls do they have altogether? ",
-					answer: "39",
-					secondanswer: "30",
-					quizoption1: "37",
-					quizoption2: "39",
-					quizoption3: "40",
+						"In this lesson you will learn about adding two numbers to find the sum and substracting two numbers to find the diference",
+					question: "What is the sum? 6 + 3 =",
+					quizoption1: "7",
+					quizoption2: "5",
+					quizoption3: "9",
 					hint: "",
-					video: "",
+					video: "https://www.youtube.com/watch?v=033pEpEnr_U",
 					image:
-						"http://proprofs-cdn.s3.amazonaws.com/images/QM/user_images/1826446/1511347853.jpg",
+						"https://ucarecdn.com/3355488a-0e71-4e2b-99f5-d20a44b8bcaf/levelupwithin10.png",
 					next: "/lesson/5"
 				}
 			]

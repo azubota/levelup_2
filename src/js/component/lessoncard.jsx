@@ -7,17 +7,20 @@ export default class LessonCard extends React.Component {
 	render() {
 		return (
 			<div
-				className="card border-success m-3 mx-auto my-auto"
-				Width="18rem">
-				<div className="card-header">{this.props.kind}</div>
+				className="card border-success m-1 mx-auto my-auto"
+				Width="100rem">
+				<div className="card-header bg-success text-light">
+					{this.props.kind}
+				</div>
 				<div className="card-body text-success">
-					<img src={this.props.src} className="img-thumbnail" />
-					<h5 className="card-title">{this.props.title}</h5>
-					<p className="card-text">{this.props.content}</p>
+					<img
+						src={this.props.src}
+						className="img-thumbnail"
+						width="70rem"
+					/>
+					<h6 className="card-title">{this.props.title}</h6>
 					<Link to={"/lesson/" + this.props.idx}>
-						<button className="btn btn-success">
-							Start Lesson
-						</button>
+						<button className="btn btn-success">Start</button>
 					</Link>
 				</div>
 			</div>
@@ -28,7 +31,6 @@ export default class LessonCard extends React.Component {
 LessonCard.propTypes = {
 	kind: PropTypes.string,
 	src: PropTypes.any,
-	content: PropTypes.string,
 	title: PropTypes.string,
 	lessonClick: PropTypes.function,
 	idx: PropTypes.integer
