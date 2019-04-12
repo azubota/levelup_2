@@ -27,7 +27,9 @@ export class Home extends React.Component {
 								<small
 									id="emailHelp"
 									className="form-text text-muted">
-									Well never share your email with another kid
+									We will never share your email with another
+									kid
+
 								</small>
 							</div>
 							<div className="form-group">

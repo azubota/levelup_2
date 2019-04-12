@@ -8,6 +8,10 @@ import { ForgotPassword } from "./views/forgotPassword.jsx";
 
 import { Lesson } from "./views/lesson.jsx";
 import { LessonList } from "./views/lessonlist.jsx";
+
+import { Profile } from "./views/profile.jsx";
+import { Edit } from "./views/edit.jsx";
+
 import Store from "./store/appContext.jsx";
 
 import { Navbar } from "./component/navbar.jsx";
@@ -24,6 +28,8 @@ export class Layout extends React.Component {
 						<Navbar />
 						<Switch>
 							<Route exact path="/" component={Home} />
+
+							<Route path="/profile" component={Profile} />
 							<Route
 								path="/forgotPassword"
 								component={ForgotPassword}
@@ -31,6 +37,7 @@ export class Layout extends React.Component {
 							<Route path="/signup" component={SignUp} />
 							<Route path="/lesson/:theid" component={Lesson} />
 							<Route path="/lessonlist" component={LessonList} />
+							<Route path="/edit" component={Edit} />
 							<Route render={() => <h1>Not found!</h1>} />
 						</Switch>
 						<Footer />
@@ -40,4 +47,5 @@ export class Layout extends React.Component {
 		);
 	}
 }
+
 export default Store(Layout);

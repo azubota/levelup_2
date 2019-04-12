@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext.jsx";
 import LessonCard from "../component/lessoncard.jsx";
 import Buttons from "../component/buttons.jsx";
+
 import "../../styles/demo.css";
 import PropTypes from "prop-types";
 

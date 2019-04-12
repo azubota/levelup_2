@@ -9,7 +9,6 @@ import Buttons from "../component/buttons.jsx";
 
 export class Lesson extends React.Component {
 	render() {
-		return (
 			<div className="row">
 				<div className="col-3">
 					<img
@@ -52,8 +51,7 @@ export class Lesson extends React.Component {
 					<Buttons />
 				</div>
 			</div>
-		);
-	}
+;	}
 }
 
 Lesson.propTypes = {
