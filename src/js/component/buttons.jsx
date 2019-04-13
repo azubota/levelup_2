@@ -1,6 +1,7 @@
 import React from "react";
 import { Context } from "../store/appContext.jsx";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 export default class Buttons extends React.Component {
 	render() {
@@ -12,11 +13,13 @@ export default class Buttons extends React.Component {
 						className="img-thumbnail justify-content-centered"
 						width="200rem"
 					/>
-					<button
-						type="button"
-						className="btn btn-outline-success btn-block mt-2">
-						My profile
-					</button>
+					<Link to="/profile" className="text-decoration-none">
+						<button
+							type="submit"
+							className="btn btn-outline-success btn-block mt-2">
+							My Profile
+						</button>
+					</Link>
 				</div>
 			</div>
 		);

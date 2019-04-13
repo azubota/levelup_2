@@ -108,7 +108,7 @@ export class EditProfile extends React.Component {
 					</fieldset>
 					<div className="form-group row">
 						<div className="col-sm-10">
-							<a href="/profile" className="btn btn-primary">
+							<a href="/lessonlist" className="btn btn-primary">
 								Save Changes
 							</a>
 						</div>

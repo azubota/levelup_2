@@ -4,6 +4,12 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 export default class LessonComponent extends React.Component {
+	constructor() {
+		super();
+		this.state = {
+			clicked: 0
+		};
+	}
 	render() {
 		return (
 			<div
@@ -27,27 +33,44 @@ export default class LessonComponent extends React.Component {
 					<li className="list-group-item">
 						<button
 							type="submit"
-							className="btn btn-outline-success btn-block mt-2">
+							className={
+								"btn btn-outline-" +
+								(this.state.clicked === 1 ? "danger" : "dark") +
+								" btn-block mt-2"
+							}
+							onClick={() => this.setState({ clicked: 1 })}>
 							{this.props.quizoption1}
 						</button>
 					</li>
 					<li className="list-group-item">
 						<button
 							type="submit"
-							className="btn btn-outline-success btn-block mt-2">
+							className={
+								"btn btn-outline-" +
+								(this.state.clicked === 2 ? "danger" : "dark") +
+								" btn-block mt-2"
+							}
+							onClick={() => this.setState({ clicked: 2 })}>
 							{this.props.quizoption2}
 						</button>
 					</li>
 					<li className="list-group-item">
 						<button
 							type="submit"
-							className="btn btn-outline-success btn-block mt-2">
+							className={
+								"btn btn-outline-" +
+								(this.state.clicked === 3
+									? "success"
+									: "dark") +
+								" btn-block mt-2"
+							}
+							onClick={() => this.setState({ clicked: 3 })}>
 							{this.props.quizoption3}
 						</button>
 					</li>
 				</ul>
-				<Link to={this.props.next}>
-					<button className="btn btn-success">Next</button>
+				<Link to={this.props.next} className="text-decoration-none">
+					<button className="btn btn-success btn-block">Next</button>
 				</Link>
 			</div>
 		);
