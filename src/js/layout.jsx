@@ -8,7 +8,7 @@ import { ForgotPassword } from "./views/forgotPassword.jsx";
 
 import { Lesson } from "./views/lesson.jsx";
 import { LessonList } from "./views/lessonlist.jsx";
-
+import { Translate } from "./views/translate.jsx";
 import { Profile } from "./views/profile.jsx";
 import { Edit } from "./views/edit.jsx";
 
@@ -35,6 +35,7 @@ export class Layout extends React.Component {
 								component={ForgotPassword}
 							/>
 							<Route path="/signup" component={SignUp} />
+							<Route path="/translate" component={Translate} />
 							<Route path="/lesson/:theid" component={Lesson} />
 							<Route path="/lessonlist" component={LessonList} />
 							<Route path="/edit" component={Edit} />
