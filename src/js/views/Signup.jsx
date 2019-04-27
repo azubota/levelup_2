@@ -93,7 +93,7 @@ export class SignUp extends React.Component {
 								<button
 									type="submit"
 									className="btn btn-outline-success btn-block mt-1">
-									Start free trial
+									Sign Up!
 								</button>
 							</Link>
 						</form>
