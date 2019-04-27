@@ -15,9 +15,9 @@ export default class PreWorkComponent extends React.Component {
 					<div className="list-group">
 						<a
 							href="#"
-							className="list-group-item list-group-item-action list-group-item-primary">
+							className="list-group-item list-group-item-action list-group-item-primary"
 							Mom
-						</a>
+						/>
 						<a
 							href="#"
 							className="list-group-item list-group-item-action list-group-item-primary">
