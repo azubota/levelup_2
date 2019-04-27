@@ -1,0 +1,10 @@
+.card-body{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /*background-color: #D0F0C0;*/
+}
