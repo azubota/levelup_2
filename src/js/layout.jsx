@@ -8,6 +8,7 @@ import { ForgotPassword } from "./views/forgotPassword.jsx";
 
 import { Teach } from "./views/teacher.jsx";
 import { Prework } from "./views/prework.jsx";
+import { Message } from "./views/messages.jsx";
 
 import { TranslateDocs } from "./views/translateDocs.jsx";
 
@@ -20,7 +21,6 @@ import { LessonListCultural } from "./views/lessonlistcultural.jsx";
 import { Contact } from "./views/contact.jsx";
 
 import { Translate } from "./views/translate.jsx";
-
 
 import { Profile } from "./views/profile.jsx";
 import { UserProfile } from "./views/userprofile.jsx";
@@ -68,6 +68,7 @@ export class Layout extends React.Component {
 
 							<Route path="/teacher" component={Teach} />
 							<Route path="/prework" component={Prework} />
+							<Route path="/messages" component={Message} />
 
 							<Route
 								path="/lessonlistcultural"

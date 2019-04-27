@@ -46,7 +46,7 @@ export class Teach extends React.Component {
 										<h5 className="card-title">
 											Communication
 										</h5>
-										<Link to="/demo">
+										<Link to="/messages">
 											<button
 												type="submit"
 												className="btn btn-outline-success btn-block mt-2">
