@@ -3,12 +3,12 @@ import { Context } from "../store/appContext.jsx";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-export default class LessonCard extends React.Component {
+export default class LessonCardCultural extends React.Component {
 	render() {
 		return (
 			<div
 				className="card border-success m-1 mx-auto my-auto"
-				Width="200rem">
+				Width="100rem">
 				<div className="card-header bg-success text-light">
 					{this.props.kind}
 				</div>
@@ -19,7 +19,7 @@ export default class LessonCard extends React.Component {
 						width="70rem"
 					/>
 					<h6 className="card-title">{this.props.title}</h6>
-					<Link to={"/lesson/" + this.props.idx}>
+					<Link to={"/lessoncultural/" + this.props.idx}>
 						<button className="btn btn-success">Start</button>
 					</Link>
 				</div>
@@ -28,7 +28,7 @@ export default class LessonCard extends React.Component {
 	}
 }
 
-LessonCard.propTypes = {
+LessonCardCultural.propTypes = {
 	kind: PropTypes.string,
 	src: PropTypes.any,
 	title: PropTypes.string,

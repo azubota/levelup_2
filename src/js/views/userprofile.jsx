@@ -35,36 +35,51 @@ export class UserProfile extends React.Component {
 										/>
 									</div>
 
-									<ul className="list-group">
-										<li className="list-group-item text-success text-center">
-											Activity{" "}
-											<i className="fa fa-dashboard fa-1x" />
-										</li>
-										<li className="list-group-item text-right text-center">
-											<span className="pull-left">
-												<strong>Math</strong>
-											</span>{" "}
-											125
-										</li>
-										<li className="list-group-item text-right text-center">
-											<span className="pull-left">
-												<strong>Reading</strong>
-											</span>{" "}
-											13
-										</li>
-										<li className="list-group-item text-right text-center">
-											<span className="pull-left">
-												<strong>Sensory</strong>
-											</span>{" "}
-											37
-										</li>
-										<li className="list-group-item text-right text-center">
-											<span className="pull-left">
-												<strong>Social</strong>
-											</span>{" "}
-											78
-										</li>
-									</ul>
+									<div>
+										<spam className="font-weight-bold text-success">
+											ACADEMICS
+										</spam>
+										<div className="progress mb-1">
+											<div
+												className="progress-bar progress-bar-striped progress-bar-animated bg-success"
+												role="progressbar"
+												style={{ width: "25%" }}
+												aria-valuenow="25"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											/>
+										</div>
+									</div>
+									<div>
+										<spam className="font-weight-bold text-warning">
+											CULTURAL
+										</spam>
+										<div className="progress mb-1">
+											<div
+												className="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+												role="progressbar"
+												style={{ width: "70%" }}
+												aria-valuenow="25"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											/>
+										</div>
+									</div>
+									<div>
+										<spam className="font-weight-bold text-danger">
+											EMOTIONAL
+										</spam>
+										<div className="progress mb-1">
+											<div
+												className="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+												role="progressbar"
+												style={{ width: "50%" }}
+												aria-valuenow="25"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											/>
+										</div>
+									</div>
 								</div>
 								<div className="col-sm-6">
 									<div className="tab-content">
@@ -175,18 +190,24 @@ export class UserProfile extends React.Component {
 												</div>
 												<div className="form-group">
 													<div className="col-xs-12">
-														<button
-															className="btn btn-lg btn-success"
-															type="submit">
-															<i className="glyphicon glyphicon-ok-sign" />{" "}
-															Save
-														</button>
-														<button
-															className="btn btn-lg text-success"
-															type="reset">
-															<i className="glyphicon glyphicon-repeat" />{" "}
-															Reset
-														</button>
+														<Link
+															to="/thehomepage"
+															className="text-decoration-none m-1">
+															<button
+																type="submit"
+																className="btn btn-success mt-2">
+																SAVE
+															</button>
+														</Link>
+														<Link
+															to="/translate"
+															className="text-decoration-none m-1">
+															<button
+																type="submit"
+																className="btn btn-success mt-2">
+																PARENT TOOLS
+															</button>
+														</Link>
 													</div>
 												</div>
 											</form>

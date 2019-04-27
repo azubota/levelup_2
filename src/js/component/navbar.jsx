@@ -11,7 +11,7 @@ export class Navbar extends React.Component {
 						<div className="col-sm text-wrap">
 							<nav className="navbar navbar-light justify-content-center">
 								<a className="navbar-brand" href="#">
-									<Link to="/lessonlist/">
+									<Link to="/thehomepage">
 										<img
 											src="https://ucarecdn.com/3bae77be-5248-4a06-b66d-96c20a2819fb/leveluplogo2.png"
 											width="150rem"

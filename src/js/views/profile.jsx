@@ -14,13 +14,45 @@ export class Profile extends React.Component {
 						className="img-fluid"
 					/>
 				</div>
-				<div className="col-6 justify-content-around flex-row text-center">
-					<div>
-						<h1 className="card-title text-center">Profile</h1>
-						<ViewProfile />
+				<div className="col-6 ">
+					<ViewProfile />
+				</div>
+				<div className="col-3">
+					<div className="card container border border-success mt-2 mb-2 p-3 rounded signin bg-white">
+						<div
+							className="btn-group-vertical mx-auto btn-block"
+							role="group"
+							aria-label="Basic example">
+							<Link
+								to="/lessonlistcultural"
+								className="text-decoration-none m-1 btn-block">
+								<button
+									type="submit"
+									className="btn btn-outline-success btn-block mt-2">
+									CULTURAL LESSONS
+								</button>
+							</Link>
+							<Link
+								to="/lessonlist"
+								className="text-decoration-none btn-block m-1">
+								<button
+									type="submit"
+									className="btn btn-outline-success btn-block mt-2">
+									ACADEMIC LESSONS
+								</button>
+							</Link>
+							<Link
+								to="/userprofile"
+								className="text-decoration-none btn-block m-1">
+								<button
+									type="submit"
+									className="btn btn-outline-success btn-block mt-2">
+									EDIT PROFILE
+								</button>
+							</Link>
+						</div>
 					</div>
 				</div>
-				<div className="col-3" />
 			</div>
 		);
 	}

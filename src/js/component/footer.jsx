@@ -27,6 +27,15 @@ export class Footer extends Component {
 							Our Story
 						</a>
 					</li>
+					<li className="nav-item">
+						<a
+							className="nav-link disabled text-white"
+							href="#"
+							tabIndex="-1"
+							aria-disabled="true">
+							Teacher LogIn
+						</a>
+					</li>
 				</ul>
 			</div>
 		);

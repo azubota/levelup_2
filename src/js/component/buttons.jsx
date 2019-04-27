@@ -20,7 +20,7 @@ export default class Buttons extends React.Component {
 							role="group"
 							aria-label="Basic example">
 							<Link
-								to="/lessonlist"
+								to="/lessonlistcultural"
 								className="text-decoration-none m-1 btn-block">
 								<button
 									type="submit"

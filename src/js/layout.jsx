@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/functional/scrollToTop.jsx";
 
 import { Home } from "./views/home.jsx";
+import { TheHomePage } from "./views/thehomepage.jsx";
 import { SignUp } from "./views/Signup.jsx";
 import { ForgotPassword } from "./views/forgotPassword.jsx";
 import { TranslateDocs } from "./views/translateDocs.jsx";
@@ -10,13 +11,10 @@ import { Lesson } from "./views/lesson.jsx";
 import { LessonCultural } from "./views/lessoncultural.jsx";
 
 import { LessonList } from "./views/lessonlist.jsx";
-<<<<<<< HEAD
 import { LessonListCultural } from "./views/lessonlistcultural.jsx";
 import { Contact } from "./views/contact.jsx";
 
-=======
 import { Translate } from "./views/translate.jsx";
->>>>>>> 7bc1de685de66bc96f1018e47e7a65fe2b2b82cf
 import { Profile } from "./views/profile.jsx";
 import { UserProfile } from "./views/userprofile.jsx";
 import { Edit } from "./views/edit.jsx";
@@ -38,14 +36,22 @@ export class Layout extends React.Component {
 						<Switch>
 							<Route exact path="/" component={Home} />
 
-							<Route path="/profile" component={Profile} />
 							<Route
 								path="/userprofile"
 								component={UserProfile}
 							/>
 							<Route
+								path="/userprofile"
+								component={UserProfile}
+							/>
+							<Route path="/profile" component={Profile} />
+							<Route
 								path="/forgotPassword"
 								component={ForgotPassword}
+							/>
+							<Route
+								path="/thehomepage"
+								component={TheHomePage}
 							/>
 							<Route path="/signup" component={SignUp} />
 							<Route path="/contact" component={Contact} />
