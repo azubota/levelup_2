@@ -5,7 +5,7 @@ import ScrollToTop from "./component/functional/scrollToTop.jsx";
 import { Home } from "./views/home.jsx";
 import { SignUp } from "./views/Signup.jsx";
 import { ForgotPassword } from "./views/forgotPassword.jsx";
-
+import { TranslateDocs } from "./views/translateDocs.jsx";
 import { Lesson } from "./views/lesson.jsx";
 import { LessonList } from "./views/lessonlist.jsx";
 import { Translate } from "./views/translate.jsx";
@@ -35,6 +35,10 @@ export class Layout extends React.Component {
 								component={ForgotPassword}
 							/>
 							<Route path="/signup" component={SignUp} />
+							<Route
+								path="/translatedocs"
+								component={TranslateDocs}
+							/>
 							<Route path="/translate" component={Translate} />
 							<Route path="/lesson/:theid" component={Lesson} />
 							<Route path="/lessonlist" component={LessonList} />

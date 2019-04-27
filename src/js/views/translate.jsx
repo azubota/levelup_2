@@ -1,7 +1,6 @@
 import React from "react";
 import "../../styles/translate.css";
 // to do :
-// fix card image, google map
 // add logo where it says level up
 
 //include images into your bundle
@@ -17,8 +16,12 @@ export class Translate extends React.Component {
 				back: ["ATRAS", "RETOUNEN", "BACK"],
 				yes: ["Si", "Wi", "Yes"],
 				no: ["No", "Non", "No"],
-				name: ["Nombre", "Non", "Name"],
-				email: ["Email", "Imèl", "Email"],
+				name: ["Nombre de tu hijo", "Non timoun lan", "Child's Name"],
+				email: [
+					"codigo postal donde te moveras",
+					"postal kote w ap deplase",
+					"Zipcode where you will be moving"
+				],
 				gender: ["Sexo", "Sèks", "Gender"],
 				male: ["Masculino", "Gason", "Male"],
 				female: ["Femenino", "Fi", "Female"],
@@ -29,27 +32,23 @@ export class Translate extends React.Component {
 					"VOYE M 'YON IMÈL",
 					"SEND ME AN EMAIL"
 				],
-				insurance: ["Seguro Medico", "Asirans", "Insurance"],
+				insurance: [
+					"ha tenido vacunas su hijo",
+					"ou fè pitit ou gen vaksen",
+					"Has Your child had Vaccines"
+				],
 				insuranceProvider: [
-					"Proveedor de Seguro",
-					"Founisè asirans",
-					"Insurance Provider"
+					"Están actualmente matriculados en la escuela",
+					"Yo anrejistre kounye a nan lekòl la",
+					"Is your child currently enrolled in school"
 				],
-				symptoms: [
-					"Sintomas Generales",
-					"Jeneral Sentòm yo",
-					"General Symptoms"
-				],
-				general: [
-					"Marque todos los que apliquen",
-					"Make tout sa ki aplike",
-					"Mark all that apply"
-				],
+				symptoms: ["Otro Allergias", "lòt alèji", "Other Allergies"],
+				general: ["", "", ""],
 				allergies: ["Alergias", "Alèji", "Allergies"],
 				additionalSymptoms: [
 					"Diganos brevemente como se siente",
 					"Yon ti tan di nou ki jan ou santi ou",
-					"Briefly tell us how do you feel"
+					"Any concerns for school transition"
 				],
 				symptom1: ["Sintoma 1", "Sentòm yo 1", "Symptom 1"],
 				symptom2: ["Sintoma 2", "Sentòm yo 2", "Symptom 2"],
@@ -66,7 +65,7 @@ export class Translate extends React.Component {
 			patientName: "",
 			patientEmail: "",
 			patientGender: "O",
-			patientAge: 18,
+			patientAge: 5,
 			additionalSymptoms: "",
 			hasInsurance: false,
 			insuranceProvider: "",
@@ -74,18 +73,18 @@ export class Translate extends React.Component {
 			insuranceProviders: [
 				{
 					name: "insurance1",
-					description: "Insurance 1"
+					description: "Yes "
 				},
 				{
 					name: "insurance2",
-					description: "Insurance 2"
+					description: "No"
 				}
 			],
 
 			generalSymptoms: [
 				{
-					name: "generalSymptom1",
-					description: "Symptom 1",
+					name: "food allergies",
+					description: "food allergy",
 					intlName: "symptom1"
 				},
 				{
@@ -157,7 +156,7 @@ export class Translate extends React.Component {
 			);
 
 			this.executeTranslation(
-				"Here is your translate school document",
+				"Here is your translated school document",
 				"en",
 				this.state.patientLanguage[this.state.currentLang].id,
 				"presentToHP"
@@ -190,7 +189,7 @@ export class Translate extends React.Component {
 	) {
 		this.showPos();
 
-		let APIkey = "AIzaSyCeoGOMOM2SnR4j3aKJZCLUN1JtXXT8u2E";
+		let APIkey = "AIzaSyCpT_4vsK7W4AOVPhcDI_xCJHa0oRfXN8Q";
 		let APIEndpoint =
 			"https://translation.googleapis.com/language/translate/v2?key=" +
 			APIkey;
@@ -1044,9 +1043,15 @@ export class Translate extends React.Component {
 												<div
 													className="card mb-4"
 													id="map-card">
+													{" "}
+													<h3 id="green">
+														Here are the schools
+														based on the zip code
+														you entered
+													</h3>
 													<img
 														className="card-img-top"
-														src="..."
+														src="http://www.destination360.com/north-america/us/florida/miami/south-beach-bentley-map.gif"
 														alt="Card image cap"
 													/>
 													<ul className="list-group list-group-flush text-left">
@@ -1057,46 +1062,55 @@ export class Translate extends React.Component {
 										</div>
 
 										<div className="mb-4">
-											<h5 className="text-primary">
-												{
-													this.state.translations
-														.presentToHP
-												}
-											</h5>
 											<p>
-												Hi my name is&nbsp;
-												{this.state.patientName}. I am
-												using&nbsp;
-												{this.state.appname} to
-												communicate my healthcare needs.
-												My primary language is&nbsp;
-												{
-													this.state.patientLanguage[
-														this.state.currentLang
-													].description
-												}
-												. Below is a summary of my
-												symptoms and allergies.
+												Hello,
+												{this.state.patientName}. Below
+												are some things to help you
+												prepare your child for their new
+												school based on the zipcode you
+												entered.
 											</p>
 
 											<p>
-												<strong>Symptoms:</strong>
+												<strong>
+													Vaccines Needed:
+												</strong>
 												<br />
-												{this.state.symptomsSelected
-													.length > 0
-													? symptoms
-													: "None"}
+												<ul>
+													<li>Hepatitis B</li>
+													<li> Diptheria</li>
+													<li>Pertusis</li>
+													<li>Tetanus</li>
+													<li>Measles</li>
+													<li>Mumps</li>
+													<li>Rubella</li>
+												</ul>
 											</p>
 
 											<p>
-												<strong>Allergies:</strong>
+												<strong>
+													Documents Needed to Enroll:
+												</strong>
 												<br />
-												{this.state.allergiesSelected
-													.length > 0
-													? allergies
-													: "None"}
 											</p>
-
+											<ul>
+												<li>
+													Original birth certificate
+												</li>
+												<li>
+													Verification of age and
+													legal name
+												</li>
+												<li>
+													Health and Immunization
+													Requirements
+												</li>
+												<li>
+													Two (2) verification of
+													parent/legal current
+													residence
+												</li>
+											</ul>
 											<p>
 												<strong>
 													Additional Notes:
