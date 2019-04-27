@@ -68,6 +68,69 @@ const getState = ({ getStore, setStore }) => {
 						"https://ucarecdn.com/3355488a-0e71-4e2b-99f5-d20a44b8bcaf/levelupwithin10.png",
 					next: "/lesson/5"
 				}
+			],
+			culturallessons: [
+				{
+					id: 1,
+					kind: "Cultural Lesson",
+					title: "Day in the life: Elementary Student",
+					content:
+						"Check out what a typical school day is like for District 204 elementary students.",
+					hint: "",
+					video: "https://www.youtube.com/embed/MJYLfekgw2I",
+					image:
+						"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm--O3C1idEhzvWvy4f4bJHlXIptLEtbH2-szYCyn0kV5AhqOo",
+					next: "/lessoncultural/2"
+				},
+				{
+					id: 2,
+					kind: "Cultural Lesson",
+					title: "Making Friends",
+					content: "How to make friends in Elementary school.",
+					video: "https://www.youtube.com/embed/226mfhyxzSA",
+					image:
+						"https://cache.kinbox.com/wp-content/uploads/2018/11/30110715/five-tips-for-helping-your-child-make-friends-at-school.jpg",
+					next: "/lessoncultural/3"
+				},
+				{
+					id: 3,
+					kind: "Cultural Lesson",
+					title: "School Vocabulary",
+					content:
+						"Learn the school and classroom vocabulary in English with this easy words compilation for kids and beginners, also suitable for all kind of language students (ESL/EFL). The video shows a slideshow with images, words and pronunciation for an easy learning.",
+					video: "https://www.youtube.com/embed/iRCB0QaSEPE",
+					image:
+						"https://i.ytimg.com/vi/P-uwIskha3M/maxresdefault.jpg",
+					next: "/lessoncultural/4"
+				},
+				{
+					id: 4,
+					kind: "Cultural Lesson",
+					title: "School Supplies",
+					content: "Learn School Vocabulary",
+					video: "https://www.youtube.com/embed/AS5nhKzaOqo",
+					image:
+						"https://previews.123rf.com/images/sararoom/sararoom1702/sararoom170200007/71960140-vector-illustration-of-cartoon-back-to-school-vocabulary.jpg",
+					next: "/lessoncultural/5"
+				}
+			],
+			emotionallesson: [
+				{
+					id: 1,
+					kind: "Emotional Lesson",
+					title: "Short a vowel",
+					content: "what should i wear today",
+					question:
+						"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2i81DqxKH72cHh6TGT3dPpat0SKTk1HlQblAiWmSJ00ar1o709A",
+					quizoption1: "rod",
+					quizoption2: "heart",
+					quizoption3: "mat",
+					hint: "",
+					video: "https://www.youtube.com/embed/nkpnRvCLRRA",
+					image:
+						"https://ucarecdn.com/ec7a0fa5-c5bc-4df4-94cf-d9508c2b191e/levelupA.png",
+					next: "/lesson/2"
+				}
 			]
 		},
 		actions: {

@@ -4,23 +4,21 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext.jsx";
 import "../../styles/demo.css";
 import PropTypes from "prop-types";
-import LessonComponent from "../component/lessoncomponent.jsx";
+import CulturalLesson from "../component/culturallesson.jsx";
 import ProfileCard from "../component/profilecard.jsx";
+import Buttons from "../component/buttons.jsx";
 
-export class Lesson extends React.Component {
+export class LessonCultural extends React.Component {
 	render() {
 		return (
 			<div className="row">
 				<div className="col-3">
-					<img
-						src="https://previews.dropbox.com/p/thumb/AAagsQlY6sefsQ65D9sCHh3yhaxOeCejXKvLlvdS9lpCJmwGmDxZVkGdgUMpoG2YU__HFLH_WuirSQUoXKCSLXmvlt3QXZlQLStXx5WhDBMFnLnnR0R_3MbdfzYn5XTUDwVOSztL9lpjkBd-X36wvC_nq42S8lA68hCI0JZb2R405nS-8ifSzFPXDjSZrds-1Dzdr-an_pa2U9IapgFL4yaMdHWqBwNFxsAXUIJMTjLBnn9qdjLo9vzm7zXD-Q3CLBDCrY9jdtJjwnaviaxhyDhoQWV2Zi6jdUHJ-NxCXQ_OONsB0yhf0dnU7doHQaNYnnvLT09RSUO5I2GxyM5EkOwX/p.png?size_mode=5"
-						className="img-fluid"
-					/>
+					<ProfileCard />
 				</div>
 				<div className="col-6 ">
 					<Context.Consumer>
 						{({ actions, store }) => {
-							return store.lessons
+							return store.culturallessons
 								.filter((item, index) => {
 									if (
 										item.id ===
@@ -30,16 +28,12 @@ export class Lesson extends React.Component {
 								})
 								.map(it => {
 									return (
-										<LessonComponent
+										<CulturalLesson
 											key={it.index}
 											src={it.image}
 											content={it.content}
 											title={it.title}
 											kind={it.kind}
-											quizoption1={it.quizoption1}
-											quizoption2={it.quizoption2}
-											quizoption3={it.quizoption3}
-											question={it.question}
 											video={it.video}
 											next={it.next}
 										/>
@@ -49,13 +43,33 @@ export class Lesson extends React.Component {
 					</Context.Consumer>
 				</div>
 				<div className="col-3">
-					<ProfileCard />
+					<Context.Consumer>
+						{({ actions, store }) => {
+							return store.culturallessons
+								.filter((item, index) => {
+									if (
+										item.id ===
+										parseInt(this.props.match.params.theid)
+									)
+										return item;
+								})
+								.map(it => {
+									return (
+										<Buttons
+											key={it.index}
+											src={it.image}
+											title={it.title}
+										/>
+									);
+								});
+						}}
+					</Context.Consumer>
 				</div>
 			</div>
 		);
 	}
 }
 
-Lesson.propTypes = {
+LessonCultural.propTypes = {
 	match: PropTypes.object
 };

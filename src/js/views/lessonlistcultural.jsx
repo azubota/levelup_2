@@ -8,7 +8,7 @@ import ProfileCard from "../component/profilecard.jsx";
 import "../../styles/demo.css";
 import PropTypes from "prop-types";
 
-export class LessonList extends React.Component {
+export class LessonListCultural extends React.Component {
 	render() {
 		return (
 			<div className="row">
@@ -22,18 +22,20 @@ export class LessonList extends React.Component {
 					<div className="row ">
 						<Context.Consumer>
 							{({ store }) => {
-								return store.lessons.map((item, index) => {
-									return (
-										<div key={index} className="col-3">
-											<LessonCard
-												src={item.image}
-												title={item.title}
-												kind={item.kind}
-												idx={item.id}
-											/>
-										</div>
-									);
-								});
+								return store.culturallessons.map(
+									(item, index) => {
+										return (
+											<div key={index} className="col-3">
+												<LessonCard
+													src={item.image}
+													title={item.title}
+													kind={item.kind}
+													idx={item.id}
+												/>
+											</div>
+										);
+									}
+								);
 							}}
 						</Context.Consumer>
 					</div>
