@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export class Footer extends Component {
 	render() {
@@ -6,9 +7,11 @@ export class Footer extends Component {
 			<div>
 				<ul className="nav justify-content-center btn-success rounded">
 					<li className="nav-item">
-						<a className="nav-link active text-white" href="#">
-							Contact Us
-						</a>
+						<Link to="/contact" className="text-decoration-none">
+							<a className="nav-link active text-white" href="#">
+								Contact Us
+							</a>
+						</Link>
 					</li>
 					<li className="nav-item">
 						<a className="nav-link text-white" href="#">
