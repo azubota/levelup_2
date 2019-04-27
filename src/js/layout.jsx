@@ -5,15 +5,30 @@ import ScrollToTop from "./component/functional/scrollToTop.jsx";
 import { Home } from "./views/home.jsx";
 import { SignUp } from "./views/Signup.jsx";
 import { ForgotPassword } from "./views/forgotPassword.jsx";
+
+import { Teach } from "./views/teacherscorner.jsx";
+import { Prework } from "./views/prework.jsx";
+
+
 import { TranslateDocs } from "./views/translateDocs.jsx";
+
 import { Lesson } from "./views/lesson.jsx";
 import { LessonCultural } from "./views/lessoncultural.jsx";
 
 import { LessonList } from "./views/lessonlist.jsx";
+
 import { LessonListCultural } from "./views/lessonlistcultural.jsx";
 import { Contact } from "./views/contact.jsx";
 
 import { Translate } from "./views/translate.jsx";
+=======
+
+import { LessonListCultural } from "./views/lessonlistcultural.jsx";
+import { Contact } from "./views/contact.jsx";
+
+
+import { Translate } from "./views/translate.jsx";
+
 import { Profile } from "./views/profile.jsx";
 import { UserProfile } from "./views/userprofile.jsx";
 import { Edit } from "./views/edit.jsx";
@@ -57,10 +72,15 @@ export class Layout extends React.Component {
 								component={LessonCultural}
 							/>
 							<Route path="/lessonlist" component={LessonList} />
+
+							<Route path="/teacherscorner" component={Teach} />
+							<Route path="/prework" component={Prework} />
+
 							<Route
 								path="/lessonlistcultural"
 								component={LessonListCultural}
 							/>
+
 							<Route path="/edit" component={Edit} />
 							<Route render={() => <h1>Not found!</h1>} />
 						</Switch>
