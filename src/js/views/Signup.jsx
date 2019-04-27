@@ -88,12 +88,12 @@ export class SignUp extends React.Component {
 								</select>
 							</div>
 							<Link
-								to="/translate"
+								to="/lessonlist"
 								className="text-decoration-none">
 								<button
 									type="submit"
 									className="btn btn-outline-success btn-block mt-1">
-									Level Up!
+									Sign Up!
 								</button>
 							</Link>
 						</form>
