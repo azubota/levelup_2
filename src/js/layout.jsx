@@ -10,13 +10,10 @@ import { Lesson } from "./views/lesson.jsx";
 import { LessonCultural } from "./views/lessoncultural.jsx";
 
 import { LessonList } from "./views/lessonlist.jsx";
-<<<<<<< HEAD
 import { LessonListCultural } from "./views/lessonlistcultural.jsx";
 import { Contact } from "./views/contact.jsx";
 
-=======
 import { Translate } from "./views/translate.jsx";
->>>>>>> 7bc1de685de66bc96f1018e47e7a65fe2b2b82cf
 import { Profile } from "./views/profile.jsx";
 import { UserProfile } from "./views/userprofile.jsx";
 import { Edit } from "./views/edit.jsx";
