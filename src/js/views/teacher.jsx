@@ -27,7 +27,7 @@ export class Teach extends React.Component {
 									/>
 									<div className="card-body">
 										<h5 className="card-title">Pre-work</h5>
-										<Link to="/demo">
+										<Link to="/prework">
 											<button
 												type="submit"
 												className="btn btn-outline-success btn-block mt-2">
