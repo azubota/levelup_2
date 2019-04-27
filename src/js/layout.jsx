@@ -21,6 +21,7 @@ import { Contact } from "./views/contact.jsx";
 
 import { Translate } from "./views/translate.jsx";
 
+
 import { Profile } from "./views/profile.jsx";
 import { UserProfile } from "./views/userprofile.jsx";
 import { Edit } from "./views/edit.jsx";
