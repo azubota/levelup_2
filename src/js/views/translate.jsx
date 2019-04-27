@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/translate.css";
+import { Link } from "react-router-dom";
 // to do :
 // add logo where it says level up
 
@@ -1048,6 +1049,7 @@ export class Translate extends React.Component {
 														.locations
 												}
 											</h5>
+
 											<div className="text-center">
 												<div
 													className="card mb-4"
@@ -1074,6 +1076,11 @@ export class Translate extends React.Component {
 													<ul className="list-group list-group-flush text-left">
 														{locationsResult}
 													</ul>
+													<button className="btn-outline-success btn-lg mt-1">
+														Notify Education
+														Professional at Above
+														schools
+													</button>
 												</div>
 											</div>
 										</div>
@@ -1203,12 +1210,14 @@ export class Translate extends React.Component {
 														]
 													}
 												</button>
-												<button
-													type="button"
-													className="btn btn-outline-success btn-sm mt-1">
-													{" "}
-													Track My Childs Progress
-												</button>
+												<Link to="/profile">
+													<button
+														type="button"
+														className="btn btn-outline-success btn-sm mt-1">
+														{" "}
+														Track My Childs Progress
+													</button>
+												</Link>
 											</div>
 										</div>
 									</div>
