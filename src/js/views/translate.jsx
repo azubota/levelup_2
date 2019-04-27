@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/translate.css";
+import { Link } from "react-router-dom";
 // to do :
 // add logo where it says level up
 
@@ -16,17 +17,17 @@ export class Translate extends React.Component {
 				back: ["ATRAS", "RETOUNEN", "BACK"],
 				yes: ["Si", "Wi", "Yes"],
 				no: ["No", "Non", "No"],
-				name: ["Nombre de tu hijo", "Non timoun lan", "Child's Name"],
+				name: ["Nombre", "Non", "Name"],
 				email: [
 					"codigo postal donde te moveras",
 					"postal kote w ap deplase",
 					"Zipcode where you will be moving"
 				],
-				gender: ["Sexo", "Sèks", "Gender"],
+				gender: ["Sexo del niño", "Sèks timoun nan", "Child's Gender"],
 				male: ["Masculino", "Gason", "Male"],
 				female: ["Femenino", "Fi", "Female"],
 				other: ["Otro", "Lòt", "Other"],
-				age: ["Edad", "Laj", "Age"],
+				age: ["Edad del nino", "Laj timoun nan", "Child's Age"],
 				sendEmail: [
 					"NOTIFICAME VIA EMAIL",
 					"VOYE M 'YON IMÈL",
@@ -1048,6 +1049,7 @@ export class Translate extends React.Component {
 														.locations
 												}
 											</h5>
+
 											<div className="text-center">
 												<div
 													className="card mb-4"
@@ -1058,6 +1060,14 @@ export class Translate extends React.Component {
 														based on the zip code
 														you entered
 													</h3>
+													<div id="shadow">
+														Click Notify School to
+														have an invite sent to a
+														school professional. You
+														will be notified when
+														they accept your
+														invitation.{" "}
+													</div>
 													<img
 														className="card-img-top"
 														src="http://www.destination360.com/north-america/us/florida/miami/south-beach-bentley-map.gif"
@@ -1066,6 +1076,11 @@ export class Translate extends React.Component {
 													<ul className="list-group list-group-flush text-left">
 														{locationsResult}
 													</ul>
+													<button className="btn-outline-success btn-lg mt-1">
+														Notify Education
+														Professional at Above
+														schools
+													</button>
 												</div>
 											</div>
 										</div>
@@ -1195,6 +1210,14 @@ export class Translate extends React.Component {
 														]
 													}
 												</button>
+												<Link to="/profile">
+													<button
+														type="button"
+														className="btn btn-outline-success btn-sm mt-1">
+														{" "}
+														Track My Childs Progress
+													</button>
+												</Link>
 											</div>
 										</div>
 									</div>
