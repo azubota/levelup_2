@@ -12,9 +12,7 @@ export default class LessonComponent extends React.Component {
 	}
 	render() {
 		return (
-			<div
-				className="card container border border-success mt-2 mb-2 p-2 rounded signin bg-light"
-				width="18rem">
+			<div className="card container border border-success mt-2 mb-2 p-2 rounded signin bg-light">
 				<div className="embed-responsive embed-responsive-16by9">
 					<iframe
 						className="embed-responsive-item"
