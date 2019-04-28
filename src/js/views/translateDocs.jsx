@@ -8,7 +8,7 @@ export class TranslateDocs extends React.Component {
 					className="card container border border-success mt-2 mb-5 p-2 rounded signin bg-light "
 					style={{ width: "30rem" }}>
 					<div className="btn-group-vertical m-3 text-success">
-						Current Progress for: Matt Damon
+						<span>Current Progress for: Matt Damon</span>
 						<img
 							src="https://upload.wikimedia.org/wikipedia/commons/9/98/Child_young_face_close_up.jpg"
 							className="img-thumbnail justify-content-centered"

@@ -28,13 +28,15 @@ export class Footer extends Component {
 						</a>
 					</li>
 					<li className="nav-item">
-						<a
-							className="nav-link disabled text-white"
-							href="#"
-							tabIndex="-1"
-							aria-disabled="true">
-							Teacher LogIn
-						</a>
+						<Link to="/teacher">
+							<a
+								className="nav-link disabled text-white"
+								href="#"
+								tabIndex="-1"
+								aria-disabled="true">
+								Teacher LogIn
+							</a>
+						</Link>
 					</li>
 				</ul>
 			</div>
