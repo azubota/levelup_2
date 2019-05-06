@@ -12,7 +12,7 @@ export class Message extends React.Component {
 							<input
 								className="form-control"
 								type="text"
-								placeholder="Default input"
+								placeholder="Send your future student a message"
 							/>
 							<div className="card-body">
 								<h5 className="card-title" />

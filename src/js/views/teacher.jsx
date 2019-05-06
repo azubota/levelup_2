@@ -44,7 +44,7 @@ export class Teach extends React.Component {
 									/>
 									<div className="card-body">
 										<h5 className="card-title">
-											Communication
+											Communicate
 										</h5>
 										<Link to="/messages">
 											<button
@@ -63,7 +63,7 @@ export class Teach extends React.Component {
 									/>
 									<div className="card-body">
 										<h5 className="card-title">Grades</h5>
-										<Link to="/demo">
+										<Link to="/translatedocs">
 											<button
 												type="submit"
 												className="btn btn-outline-success btn-block mt-2">
