@@ -47,7 +47,7 @@ const getState = ({ getStore, setStore }) => {
 					quizoption2: "40",
 					quizoption3: "39",
 					hint: "",
-					video: "https://www.youtube.com/watch?v=033pEpEnr_U",
+					video: "https://www.youtube.com/embed/1i7vmqGLjP4",
 					image:
 						"https://ucarecdn.com/a410154f-7731-41ed-ae5d-7370bb40ce17/levelup101.png",
 					next: "/lesson/4"
@@ -63,10 +63,10 @@ const getState = ({ getStore, setStore }) => {
 					quizoption2: "5",
 					quizoption3: "9",
 					hint: "",
-					video: "https://www.youtube.com/watch?v=033pEpEnr_U",
+					video: "https://www.youtube.com/embed/kpEJwpemL2Q",
 					image:
 						"https://ucarecdn.com/3355488a-0e71-4e2b-99f5-d20a44b8bcaf/levelupwithin10.png",
-					next: "/lesson/5"
+					next: "/lesson/1"
 				}
 			],
 			culturallessons: [
@@ -111,7 +111,7 @@ const getState = ({ getStore, setStore }) => {
 					video: "https://www.youtube.com/embed/AS5nhKzaOqo",
 					image:
 						"https://previews.123rf.com/images/sararoom/sararoom1702/sararoom170200007/71960140-vector-illustration-of-cartoon-back-to-school-vocabulary.jpg",
-					next: "/lessoncultural/5"
+					next: "/lessoncultural/1"
 				}
 			],
 			emotionallesson: [

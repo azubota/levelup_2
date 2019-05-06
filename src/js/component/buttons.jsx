@@ -43,7 +43,7 @@ export default class Buttons extends React.Component {
 								<button
 									type="submit"
 									className="btn btn-outline-success btn-block mt-2">
-									My Profile
+									MY PROFILE
 								</button>
 							</Link>
 						</div>

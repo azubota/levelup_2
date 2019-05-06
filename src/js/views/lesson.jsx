@@ -49,7 +49,7 @@ export class Lesson extends React.Component {
 				<div className="col-3">
 					<Context.Consumer>
 						{({ actions, store }) => {
-							return store.culturallessons
+							return store.lessons
 								.filter((item, index) => {
 									if (
 										item.id ===

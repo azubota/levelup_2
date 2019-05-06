@@ -43,7 +43,6 @@ export class Layout extends React.Component {
 						<Navbar />
 						<Switch>
 							<Route exact path="/" component={Home} />
-
 							<Route
 								path="/userprofile"
 								component={UserProfile}
